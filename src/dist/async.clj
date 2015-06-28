@@ -1,6 +1,5 @@
-(ns dist.async)
+(ns dist.async
+  (:require [dist.async.networking :refer [start-server]]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn start-channel-server [port]
+  (start-server port))
